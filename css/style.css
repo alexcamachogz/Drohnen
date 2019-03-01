@@ -121,6 +121,39 @@ a.text-black:hover {
     background-color: #8c8b8b;
 }
 
+/* Contacto */
+.img-background-contacto {
+    background: url("../img/contacto.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.estilo-form {
+    background-color: #d4d4d4b0; 
+}
+
+.estilo-textform {
+    background-color: #d4d4d4b0; 
+}
+
+.form-control:focus {
+    color: #FFF!important;
+    background-color: #5454547a!important;
+    border-color: #a3b4bb!important;
+    outline: 0;
+}
+
+a.llamanos {
+    color: #060606!important;
+}
+
+a.maileanos {
+    color: #060606!important;
+}
+
+a.redes-sociales {
+    color: #060606!important;
+}
+
 @media screen and (min-width: 600px){
 
 }
