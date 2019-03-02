@@ -68,6 +68,49 @@ h1 {
     margin-bottom: 23px;
 }
 
+/* REGISTRO */
+.modal-background {
+    background: url("../img/registro.jpg")no-repeat center center;
+    /* background-color: #00000057; */
+    background-size: cover;
+}
+
+.form-control.form-registro {
+    background-color: #fffdfdb3!important;
+    border: 2px solid #ced4da;
+}
+
+.btn-secondary:not([disabled]):not(.disabled):active {
+    background-color: #605f61b0!important;
+}
+
+.modal-content.modal-background {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: 0px!important;
+}
+
+.modal-footer {
+    border-top: 0px!important;
+}
+
+.modal-fondo {
+    background-color: #808080c7;
+}
+
+.modal-title {
+    font-family: 'Raleway-Bold';
+}
+
+.btn-secondary {
+    background-color: #fff0!important;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
 /* BOTONES */
 .btn-primary {
     border: 2px solid #fff!important;
@@ -128,16 +171,16 @@ a.text-black:hover {
 }
 
 .estilo-form {
-    background-color: #d4d4d4b0; 
+    background-color:#fffdfdb3!important;
 }
 
 .estilo-textform {
-    background-color: #d4d4d4b0; 
+    background-color:#fffdfdb3!important;
 }
 
 .form-control:focus {
     color: #FFF!important;
-    background-color: #5454547a!important;
+    background-color: #fffdfdb3!important;
     border-color: #a3b4bb!important;
     outline: 0;
 }

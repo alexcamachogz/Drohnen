@@ -44,9 +44,9 @@
 			<div class="mask flex-center">
 			<div class="container text-center white-text wow fadeInUp">
 				<h1>¿LISTO PARA <br> ALZAR EL VUELO?</h1>
-				<button type="button" class="btn btn-primary waves-effect waves-light">EMPECEMOS</button>
+				<button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#modalRegistro">EMPECEMOS</button>
 				<h3 class="h3-conocemos">¿Ya nos conocemos?</h3>
-				<button type="button" class="btn btn-primary waves-effect waves-light">INICIA SESIÓN</button>
+				<button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#modalSesion">INICIA SESIÓN</button>
 			</div>
 			</div>
 		</div>
@@ -54,6 +54,86 @@
   	</header>
 	<!--Main Navigation-->
   
+	<!-- MODAL REGISTRO -->
+	<div class="modal fade modal-fondo" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content modal-background">
+				<div class="modal-header">
+					<h5 class="modal-title text-center white-text" id="exampleModalLongTitle">ANTES DE COMENZAR</h5>
+					<button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<input type="text" class="form-control form-registro" id="nombre-registro" placeholder="Nombre*">
+							</div>
+							<div class="col-md-6">
+								<input type="text" class="form-control form-registro" id="apellido-registro" placeholder="Apellido*">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-12">
+								<input type="email" class="form-control form-registro" id="email-registro" placeholder="Correo Electrónico*">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-12">
+								<input type="password" class="form-control form-registro" id="contrasena-registro" placeholder="Contraseña*">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-12">
+								<input type="text" class="form-control form-registro" id="codigo-registro" placeholder="Código de Acceso*">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary">¡Listo!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL REGISTRO -->
+
+	<!-- MODAL INICIO SESIÓN -->
+	<div class="modal fade modal-fondo" id="modalSesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content modal-background">
+				<div class="modal-header">
+					<h5 class="modal-title text-center white-text" id="exampleModalLongTitle">ANTES DE COMENZAR</h5>
+					<button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row mt-3">
+							<div class="col-md-12">
+								<input type="email" class="form-control form-registro" id="email-registro" placeholder="Correo Electrónico*">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-12">
+								<input type="password" class="form-control form-registro" id="contrasena-registro" placeholder="Contraseña*">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary">¡Listo!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL INICIO SESIÓN -->
+
+
 	<!--Acerca de Nosotros-->
 	<div class="container mt-5">
 		<div class="row">
