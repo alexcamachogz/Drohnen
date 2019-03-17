@@ -19,12 +19,12 @@ if(@isset($_POST["postFlag"])){
                 $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only, 0 = nothing
                 $mail->SMTPAuth = true; // authentication enabled
                 $mail->SMTPSecure = "ssl";
-                $mail->Host = "relesur.besoft.com.mx";
+                $mail->Host = "drohnen.besoft.com.mx";
                 $mail->Port = 465; // or 587
                 $mail->IsHTML(true);
-                $mail->Username = "webpage@relesur.besoft.com.mx";
+                $mail->Username = "webpage@drohnen.besoft.com.mx";
                 $mail->Password = '($PYd&s;snc9';
-                $mail->SetFrom("webpage@relesur.besoft.com.mx","CONTACTO WEB RELESUR");
+                $mail->SetFrom("webpage@drohnen.besoft.com.mx","CONTACTO WEB Drohnen");
                 $mail->Subject = "COMENTARIO PAGINA WEB";
                 $mail->AddAddress("camacho.ale94@gmail.com");
 
