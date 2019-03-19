@@ -106,8 +106,8 @@
 
 	<!-- MODAL INICIO SESIÓN -->
 	<div class="modal fade modal-fondo" id="modalSesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content modal-background">
+		<div class="modal-dialog modal-dialog-centered" role="document"> 
+			<div class="modal-content modal-background"> <form action="php/Formulario-Login/login.php" method="POST">
 				<div class="modal-header">
 					<h5 class="modal-title text-center white-text" id="exampleModalLongTitle">Inicio de Sesión</h5>
 					<button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
@@ -118,21 +118,25 @@
 					<div class="container-fluid">
 						<div class="row mt-3">
 							<div class="col-md-12">
-								<input type="email" class="form-control form-registro" id="email-login" placeholder="Correo Electrónico*">
+								<input type="email" class="form-control form-registro" name="email-login" id="email-login" placeholder="Correo Electrónico*">
 							</div>
 						</div>
 						<div class="row mt-3">
 							<div class="col-md-12">
-								<input type="password" class="form-control form-registro" id="contrasena-login" placeholder="Contraseña*">
+								<input type="password" class="form-control form-registro" name="contrasena-login" id="contrasena-login" placeholder="Contraseña*">
 							</div>
 						</div>
 					</div>
-					
+					<div class="row mt-2 justify-content-end">
+						<div class="col-md-12">
+							<p id="statusLogin" class="white-text text-center"></p>
+						</div>
+					</div>	
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary">¡Listo!</button>
-				</div>
-			</div>
+					<button type="button" id="btnLogin" class="btn btn-secondary">¡Listo!</button>
+				</div> </form>
+			</div> 
 		</div>
 	</div>
 	<!-- MODAL INICIO SESIÓN -->
@@ -327,5 +331,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/mdb.min.js"></script>
 	<script src="js/formularios/formulario-registro.js"></script>
+	<script src="js/formularios/formulario-login.js"></script>
 </body>
 </html>

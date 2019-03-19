@@ -14,7 +14,7 @@
 			if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 				if (strlen($passwd) >= 8) {
 					if ($aCode == "qwerty123") {
-						// $passwd = md5($passwd);
+						$passwd = md5($passwd);
 						$sql = "INSERT INTO usuario (firstName, lastName, email, passwd, accessCode) 
 								VALUES ('$nombre', '$apellido', '$email', '$passwd', '$aCode')";
 						$link->query($sql);
