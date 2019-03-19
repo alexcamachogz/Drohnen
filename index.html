@@ -57,7 +57,7 @@
 	<!-- MODAL REGISTRO -->
 	<div class="modal fade modal-fondo" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content modal-background"> <form action="PHP/Formulario-Registro/registro.php" method="POST">
+			<div class="modal-content modal-background">
 				<div class="modal-header">
 					<h5 class="modal-title text-center white-text" id="exampleModalLongTitle">ANTES DE COMENZAR</h5>
 					<button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
@@ -89,11 +89,16 @@
 								<input type="text" class="form-control form-registro" name="codigo-registro" id="codigo-registro" placeholder="Código de Acceso*">
 							</div>
 						</div>
+						<div class="row mt-2 justify-content-end">
+							<div class="col-md-12">
+								<p id="statusMessage" class="white-text text-center"></p>
+							</div>
+						</div>
 					</div> 
 				</div>
 				<div class="modal-footer">
-					<button type="submit" class="btn btn-secondary">¡Listo!</button>
-				</div> </form>
+					<button type="button" id="btnRegistro" class="btn btn-secondary">¡Listo!</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -113,12 +118,12 @@
 					<div class="container-fluid">
 						<div class="row mt-3">
 							<div class="col-md-12">
-								<input type="email" class="form-control form-registro" id="email-registro" placeholder="Correo Electrónico*">
+								<input type="email" class="form-control form-registro" id="email-login" placeholder="Correo Electrónico*">
 							</div>
 						</div>
 						<div class="row mt-3">
 							<div class="col-md-12">
-								<input type="password" class="form-control form-registro" id="contrasena-registro" placeholder="Contraseña*">
+								<input type="password" class="form-control form-registro" id="contrasena-login" placeholder="Contraseña*">
 							</div>
 						</div>
 					</div>
@@ -321,5 +326,6 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/mdb.min.js"></script>
+	<script src="js/formularios.js"></script>
 </body>
 </html>

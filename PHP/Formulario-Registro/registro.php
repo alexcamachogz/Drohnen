@@ -1,19 +1,50 @@
 <?php
 
-    include_once("../conexion.php");
+	include_once("../conexion.php");
+	header('Content-Type: application/json');
 
+	$nombre 	= trim(isset($_POST['nombre']) 		? $_POST['nombre'] 		: "");
+	$apellido 	= trim(isset($_POST['apellido'])   	? $_POST['apellido']   	: "");
+	$email 		= trim(isset($_POST['email']) 	    ? $_POST['email'] 	    : "");
+	$passwd 	= trim(isset($_POST['contrasena']) 	? $_POST['contrasena'] 	: "");
+	$aCode 		= trim(isset($_POST['codigo']) 		? $_POST['codigo'] 		: "");
 
-    $nombre 	= trim(isset($_POST['nombre-registro']) 	? $_POST['nombre-registro'] 	: "");
-	$apellido 	= trim(isset($_POST['apellido-registro'])   ? $_POST['apellido-registro']   : "");
-	$email 		= trim(isset($_POST['email-registro']) 	    ? $_POST['email-registro'] 	    : "");
-	$passwd 	= trim(isset($_POST['contrasena-registro']) ? $_POST['contrasena-registro'] : "");
-	$aCode 		= trim(isset($_POST['codigo-registro']) 	? $_POST['codigo-registro'] 	: "");
+	// Formato MD5 para password
+	$passwd = md5($passwd);
 
-	$passMd5 = md5($passwd);
-
-	$sql = "INSERT INTO usuario (firstName, lastName, email, passwd, accessCode) VALUES ('$nombre', '$apellido', '$email', '$passMd5', '$aCode')";
-	echo $sql;
-
+	// Query
+	$sql = "INSERT INTO usuario (firstName, lastName, email, passwd, accessCode) VALUES ('$nombre', '$apellido', '$email', '$passwd', '$aCode')";
 	$link->query($sql);
+
+	# No funciona, arreglar
+	if (strlen($nombre) > 3) {
+		if (sterlen($apellido) > 3) {
+			if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+				if ($passwd >= 8) {
+					# aquí debería ir la query
+				} else {
+					echo json_encode([
+						"status" => "INVALID_PASSWORD",
+						"message" => "La contraseña debe ser mayor a 8 caracteres."
+					]);
+				}
+			} else {
+				echo json_encode([
+					"status" => "INVALID_EMAIL",
+					"message" => "Formato del correo es inválido."
+				]);
+			}
+		} else {
+			echo json_encode([
+				"status" => "INVALID_LASTNAME",
+				"message" => "Formato del apellido es inválido."
+			]);
+		}
+	} else {
+		echo json_encode([
+			"status" => "INVALID_NAME",
+			"message" => "Formato del nombre es inválido."
+		]);
+	}
 
 ?>
