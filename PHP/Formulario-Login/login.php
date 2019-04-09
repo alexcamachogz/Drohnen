@@ -2,6 +2,7 @@
 
     include_once("../conexion.php");
     session_start();
+    
     header('Content-Type: application/json');
 
     $email 		= trim(isset($_POST['email']) 	    ? $_POST['email'] 	    : "");
@@ -9,17 +10,18 @@
     
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         if (strlen($passwd) >= 8) {
-            $sql = "SELECT * FROM usuario WHERE email like '$email' AND passwd = '$passwd'";
+            #$sql = "SELECT * FROM usuario WHERE email like '$email' AND passwd = '$passwd'";
             
             $statement = $link->prepare('SELECT * FROM usuario WHERE email = :email AND passwd = :passwd');
-            
             $passwd = md5($passwd);
+
 	        $statement->execute(array(
 			    ':email' => $email,
 			    ':passwd' => $passwd
             ));
             
             $resultado = $statement->fetch();
+
             if ($resultado !== false) {
                 echo json_encode([
                     "status" => "OK",
@@ -32,7 +34,7 @@
                 ]);
             }
             
-            $link->query($sql);
+            #$link->query($sql);
         } else {
             echo json_encode([
                 "status" => "INVALID_PASSWORD",

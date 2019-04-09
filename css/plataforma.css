@@ -1,0 +1,20 @@
+/* FUENTES */
+@font-face {
+	font-family: 'Raleway-Bold';
+	src: url('../font/raleway-bold/');
+	src: local('☺'), url('../font/raleway-bold/Raleway-Bold.woff') format('woff'), url('../font/raleway-bold/Raleway-Bold.ttf') format('truetype'), url('../font/raleway-bold/Raleway-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-Medium';
+	src: url('../font/raleway-medium/');
+	src: local('☺'), url('../font/raleway-medium//Raleway-Medium.woff') format('woff'), url('../font/raleway-medium//Raleway-Medium.ttf') format('truetype'), url('../font/raleway-medium//Raleway-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i.fa-cog {
+    font-size: 24px;
+}
