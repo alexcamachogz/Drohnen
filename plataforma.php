@@ -4,7 +4,6 @@
         header('Location: index.php');
         die();
     } else {
-
 ?>
 
     <!DOCTYPE html>

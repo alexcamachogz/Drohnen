@@ -29,8 +29,8 @@
 						<a class="nav-link" href="#">CONOCE MÁS</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#">DROHNEN <span class="sr-only">(current)</span></a>
-						<!-- <img class="logo-dron" src="img/drohnen_rgb.png" alt="logo"> -->
+						<!-- <a class="nav-link" href="#">DROHNEN <span class="sr-only">(current)</span></a> -->
+						<img class="logo-dron" src="img/logos/logo-medium-light.png" alt="logo">
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">CONTACTO</a>
@@ -151,7 +151,7 @@
 		</div>
 		<div class="row d-flex justify-content-center mt-4">
 			<div class="col-md-5">
-				<img class="img-fluid" src="img/acerca-nosotros.jpeg" alt="acerca-nosotros">
+				<img class="img-fluid" src="img/about-Drohnen.png" alt="acerca-nosotros">
 			</div>
 			<div class="col-md-5">
 				<p class="text-justify">

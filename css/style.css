@@ -22,7 +22,7 @@
 }
 
 .view {
-    background: url("../img/intro.jpeg")no-repeat center center;
+    background: url("../img/intro-Drohnen.jpeg")no-repeat center center;
     background-size: cover;
 }
 
@@ -70,7 +70,7 @@ h1 {
 
 /* REGISTRO */
 .modal-background {
-    background: url("../img/registro.jpg")no-repeat center center;
+    background: url("../img/registro-Drohnen.jpg")no-repeat center center;
     /* background-color: #00000057; */
     background-size: cover;
 }
@@ -126,7 +126,7 @@ h1 {
 
 /* ACERCA DE NOSOTROS */
 .img-background {
-    background: url("../img/acerca-nosotros.jpeg")no-repeat center center;
+    background: url("../img/about-Drohnen.png")no-repeat center center;
     background-size: cover;
 }
 
@@ -166,7 +166,7 @@ a.text-black:hover {
 
 /* Contacto */
 .img-background-contacto {
-    background: url("../img/contacto.jpg")no-repeat center center;
+    background: url("../img/contacto-Drohnen.jpg")no-repeat center center;
     background-size: cover;
 }
 
