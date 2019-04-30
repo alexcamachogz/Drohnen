@@ -16,7 +16,7 @@ $('#btnLogin').on("click", () => {
         },
         success : function(data) {
             if(data.status == 'OK') {
-                window.location.replace('plataforma.php');
+                window.location.replace('plataforma/');
             }
 
             $('#statusLogin').fadeIn(300);
