@@ -1,12 +1,4 @@
-<?php session_start();
-    // Comprobamos tenga sesion, si no entonces redirigimos y MATAMOS LA EJECUCION DE LA PAGINA.
-    if(isset($_SESSION['usuario'])) {
-        header('Location: index.php');
-        die();
-    } else {
-?>
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en" class="full-height">
     <head>
         <meta charset="UTF-8">
@@ -59,7 +51,7 @@
                     </div>
                     <label class="mt-2">Drohnes Volados</label>
                     <div class="progress md-progress" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped bg-color-5" role="progressbar" style="width: 36%; height: 20px" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">36%</div>
+                        <div class="progress-bar progress-bar-striped bg-color-5" role="progressbar" style="width: 50%; height: 20px" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                     </div>
                 </div>
             </div>
@@ -246,8 +238,4 @@
         <script src="../js/mdb.min.js"></script>
         <script src="../js/action-buttons.js"></script>
     </body>
-    </html>
-
-<?php
-    }
-?>
+</html>
