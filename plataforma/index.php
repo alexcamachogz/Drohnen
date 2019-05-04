@@ -83,8 +83,16 @@
                 <div class="col-md-3"><img src="../img/historial/vuelo-1.jpg" alt="" srcset=""></div>
                 <div class="col-md-3"><img src="../img/historial/vuelo-2.jpg" alt="" srcset=""></div>
                 <div class="col-md-3"><img src="../img/historial/vuelo-3.jpg" alt="" srcset=""></div>
-                <div class="col-md-3">More info...</div>
+                <div class="col-md-3"><p class="vertical">Haz más vuelos para que sean mostrados aquí...</p></div>
             </div>
+            <div class="row mt-1">
+                <div class="col-md-3"><p class="text-center">05/04/2019</p></div>
+                <div class="col-md-3"><p class="text-center">07/04/2019</p></div>
+                <div class="col-md-3"><p class="text-center">15/04/2019</p></div>
+                <div class="col-md-3"><p class="text-center"></div>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             <!-- SETTINGS -->
             <div class="zoom">
